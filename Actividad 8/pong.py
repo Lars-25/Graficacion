@@ -23,7 +23,7 @@ while True:
     pos_y += vel_y
 
     # Rebotar en los bordes
-    if pos_x - radio <= 0 or pos_x + radio >= img.shape[1]:
+    if pos_x - radio <= 0 or pos_x + radio >= img.shape[1]: # cambiar a img.shape[1] para ancho
         vel_x = -vel_x
     if pos_y - radio <= 0 or pos_y + radio >= img.shape[0]:
         vel_y = -vel_y
